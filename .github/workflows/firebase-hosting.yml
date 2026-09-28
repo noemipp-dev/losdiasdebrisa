@@ -25,7 +25,7 @@ jobs:
           service_account: github-firebase-deploy@losdiasdebrisa-50f36.iam.gserviceaccount.com
 
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm install -g firebase-tools@15.22.1
 
       - name: Deploy to Firebase Hosting
-        run: firebase deploy --only hosting --project losdiasdebrisa-50f36
+        run: firebase deploy --only hosting --project losdiasdebrisa-50f36 --non-interactive
