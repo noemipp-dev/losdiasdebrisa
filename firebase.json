@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "losdiasdebrisa",
+    "site": "losdiasdebrisa-50f36",
     "public": ".", 
     "ignore": [
       "firebase.json",
