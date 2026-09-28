@@ -1,209 +1,252 @@
 <!DOCTYPE html>
 
-<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-          "secondary-fixed-dim": "#89ceff",
-          "tertiary-fixed": "#ffddb8",
-          "on-tertiary-container": "#fffbff",
-          "on-secondary-container": "#004666",
-          "surface-container": "#e6eeff",
-          "primary-fixed": "#ffd9df",
-          "surface-tint": "#bc0051",
-          "tertiary-container": "#a36700",
-          "surface-container-lowest": "#ffffff",
-          "outline": "#8e6f74",
-          "primary-container": "#dc2566",
-          "on-primary-fixed": "#3f0016",
-          "on-primary-fixed-variant": "#90003c",
-          "surface-container-highest": "#d5e3fc",
-          "secondary-container": "#39b8fd",
-          "inverse-on-surface": "#eaf1ff",
-          "inverse-primary": "#ffb1c0",
-          "on-primary-container": "#fffbff",
-          "tertiary": "#825100",
-          "outline-variant": "#e2bdc3",
-          "primary": "#b7004f",
-          "on-surface": "#0d1c2e",
-          "surface-variant": "#d5e3fc",
-          "secondary-fixed": "#c9e6ff",
-          "on-tertiary-fixed": "#2a1700",
-          "on-background": "#0d1c2e",
-          "on-error-container": "#93000a",
-          "surface-container-high": "#dce9ff",
-          "on-secondary-fixed-variant": "#004c6e",
-          "inverse-surface": "#233144",
-          "secondary": "#006591",
-          "on-secondary": "#ffffff",
-          "background": "#f8f9ff",
-          "on-secondary-fixed": "#001e2f",
-          "primary-fixed-dim": "#ffb1c0",
-          "on-primary": "#ffffff",
-          "tertiary-fixed-dim": "#ffb95f",
-          "error": "#ba1a1a",
-          "surface": "#f8f9ff",
-          "on-surface-variant": "#5a4044",
-          "on-tertiary-fixed-variant": "#653e00",
-          "surface-container-low": "#eff4ff",
-          "on-error": "#ffffff",
-          "error-container": "#ffdad6",
-          "on-tertiary": "#ffffff",
-          "surface-bright": "#f8f9ff",
-          "surface-dim": "#ccdbf3"
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#89ceff",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-container": "#004666",
+            "surface-container": "#e6eeff",
+            "primary-fixed": "#ffd9df",
+            "surface-tint": "#bc0051",
+            "tertiary-container": "#a36700",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#8e6f74",
+            "primary-container": "#dc2566",
+            "on-primary-fixed": "#3f0016",
+            "on-primary-fixed-variant": "#90003c",
+            "surface-container-highest": "#d5e3fc",
+            "secondary-container": "#39b8fd",
+            "inverse-on-surface": "#eaf1ff",
+            "inverse-primary": "#ffb1c0",
+            "on-primary-container": "#fffbff",
+            "tertiary": "#825100",
+            "outline-variant": "#e2bdc3",
+            "primary": "#b7004f",
+            "on-surface": "#0d1c2e",
+            "surface-variant": "#d5e3fc",
+            "secondary-fixed": "#c9e6ff",
+            "on-tertiary-fixed": "#2a1700",
+            "on-background": "#0d1c2e",
+            "on-error-container": "#93000a",
+            "surface-container-high": "#dce9ff",
+            "on-secondary-fixed-variant": "#004c6e",
+            "inverse-surface": "#233144",
+            "secondary": "#006591",
+            "on-secondary": "#ffffff",
+            "background": "#f8f9ff",
+            "on-secondary-fixed": "#001e2f",
+            "primary-fixed-dim": "#ffb1c0",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "error": "#ba1a1a",
+            "surface": "#f8f9ff",
+            "on-surface-variant": "#5a4044",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container-low": "#eff4ff",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#f8f9ff",
+            "surface-dim": "#ccdbf3"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-2xs": "0.25rem",
+            "space-2xl": "3rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.5rem",
+            "gutter-desktop": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2rem",
+            "space-md": "1rem",
+            "space-3xl": "4rem",
+            "container-max": "1200px"
+          },
+          "fontFamily": {
+            "headline-sm": [
+              "Quicksand"
+            ],
+            "body-lg": [
+              "Nunito Sans"
+            ],
+            "body-sm": [
+              "Nunito Sans"
+            ],
+            "headline-lg": [
+              "Quicksand"
+            ],
+            "label-md": [
+              "Quicksand"
+            ],
+            "headline-lg-mobile": [
+              "Quicksand"
+            ],
+            "body-md": [
+              "Nunito Sans"
+            ],
+            "display-hero-mobile": [
+              "Quicksand"
+            ],
+            "label-lg": [
+              "Quicksand"
+            ],
+            "display-hero": [
+              "Quicksand"
+            ],
+            "label-sm": [
+              "Quicksand"
+            ],
+            "headline-md": [
+              "Quicksand"
+            ]
+          },
+          "fontSize": {
+            "headline-sm": [
+              "20px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "600"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "400"
+              }
+            ],
+            "body-sm": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg": [
+              "36px",
+              {
+                "lineHeight": "44px",
+                "fontWeight": "700"
+              }
+            ],
+            "label-md": [
+              "14px",
+              {
+                "lineHeight": "18px",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-hero-mobile": [
+              "38px",
+              {
+                "lineHeight": "46px",
+                "fontWeight": "700"
+              }
+            ],
+            "label-lg": [
+              "16px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "700"
+              }
+            ],
+            "display-hero": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "fontWeight": "700"
+              }
+            ],
+            "label-sm": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "32px",
+                "fontWeight": "700"
+              }
+            ]
+          }
         },
-        "borderRadius": {
-          "DEFAULT": "1rem",
-          "lg": "2rem",
-          "xl": "3rem",
-          "full": "9999px"
-        },
-        "spacing": {
-          "space-2xs": "0.25rem",
-          "space-2xl": "3rem",
-          "space-lg": "1.5rem",
-          "space-sm": "0.75rem",
-          "space-xs": "0.5rem",
-          "gutter-desktop": "1.5rem",
-          "gutter-mobile": "1rem",
-          "space-xl": "2rem",
-          "space-md": "1rem",
-          "space-3xl": "4rem",
-          "container-max": "1200px"
-        },
-        "fontFamily": {
-          "headline-sm": [
-            "Quicksand"
-          ],
-          "body-lg": [
-            "Nunito Sans"
-          ],
-          "body-sm": [
-            "Nunito Sans"
-          ],
-          "headline-lg": [
-            "Quicksand"
-          ],
-          "label-md": [
-            "Quicksand"
-          ],
-          "headline-lg-mobile": [
-            "Quicksand"
-          ],
-          "body-md": [
-            "Nunito Sans"
-          ],
-          "display-hero-mobile": [
-            "Quicksand"
-          ],
-          "label-lg": [
-            "Quicksand"
-          ],
-          "display-hero": [
-            "Quicksand"
-          ],
-          "label-sm": [
-            "Quicksand"
-          ],
-          "headline-md": [
-            "Quicksand"
-          ]
-        },
-        "fontSize": {
-          "headline-sm": [
-            "20px",
-            {
-              "lineHeight": "28px",
-              "fontWeight": "600"
-            }
-          ],
-          "body-lg": [
-            "18px",
-            {
-              "lineHeight": "28px",
-              "fontWeight": "400"
-            }
-          ],
-          "body-sm": [
-            "14px",
-            {
-              "lineHeight": "20px",
-              "fontWeight": "400"
-            }
-          ],
-          "headline-lg": [
-            "36px",
-            {
-              "lineHeight": "44px",
-              "fontWeight": "700"
-            }
-          ],
-          "label-md": [
-            "14px",
-            {
-              "lineHeight": "18px",
-              "fontWeight": "700"
-            }
-          ],
-          "headline-lg-mobile": [
-            "28px",
-            {
-              "lineHeight": "36px",
-              "fontWeight": "700"
-            }
-          ],
-          "body-md": [
-            "16px",
-            {
-              "lineHeight": "24px",
-              "fontWeight": "400"
-            }
-          ],
-          "display-hero-mobile": [
-            "38px",
-            {
-              "lineHeight": "46px",
-              "fontWeight": "700"
-            }
-          ],
-          "label-lg": [
-            "16px",
-            {
-              "lineHeight": "22px",
-              "fontWeight": "700"
-            }
-          ],
-          "display-hero": [
-            "56px",
-            {
-              "lineHeight": "64px",
-              "fontWeight": "700"
-            }
-          ],
-          "label-sm": [
-            "12px",
-            {
-              "lineHeight": "16px",
-              "fontWeight": "700"
-            }
-          ],
-          "headline-md": [
-            "24px",
-            {
-              "lineHeight": "32px",
-              "fontWeight": "700"
-            }
-          ]
-        }
       },
-    },
-  }</script>
-  </head>
-  <body class="bg-background font-body-md text-on-surface antialiased">
-    <header class="fixed top-0 left-0 right-0 z-50">
-      <!-- <div class="bg-tertiary-fixed text-on-tertiary-fixed py-space-xs px-gutter-desktop text-center font-label-md text-label-md shadow-sm">
+    }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <!-- <div class="bg-tertiary-fixed text-on-tertiary-fixed py-space-xs px-gutter-desktop text-center font-label-md text-label-md shadow-sm">
         <p class="flex items-center justify-center gap-space-xs">
           <span class="material-symbols-outlined text-[18px]">auto_awesome
 
@@ -212,547 +255,794 @@
           </span>
         </p>
       </div> -->
-      <div class="h-28 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)]"><div class="max-w-container-max mx-auto px-gutter-desktop h-full flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo Los días de Brisa" class="w-[150px] h-auto object-contain" src="/src/logoBonito.png"/>
-        <!-- <span class="font-headline-md text-headline-md text-primary tracking-wide">Los días de Brisa</span> -->
+    <div class="h-28 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)]">
+      <div class="max-w-container-max mx-auto px-gutter-desktop h-full flex items-center justify-between">
+        <div class="flex items-center gap-space-sm"><img alt="Logo Los días de Brisa"
+            class="w-[150px] h-auto object-contain" src="/src/logoBonito.png" />
+          <!-- <span class="font-headline-md text-headline-md text-primary tracking-wide">Los días de Brisa</span> -->
+        </div>
+        <nav class="hidden lg:flex items-center gap-space-md"
+          data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-full"><a
+            aria-current="page"
+            class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-full"
+            data-path="inicio" href="#">Inicio</a><a
+            class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all"
+            data-path="nuestros-libros" href="#">Nuestros Libros</a><a
+            class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all"
+            data-path="sobre-brisa" href="#">Sobre Brisa</a><a
+            class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all"
+            data-path="beneficios" href="#">Beneficios</a><a
+            class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all"
+            data-path="descargables" href="#">Descargables</a></nav>
+        <div class="flex items-center gap-space-md"><a
+            class="inline-flex items-center justify-center font-label-lg text-label-lg bg-primary-container text-on-primary-container px-space-lg py-space-xs rounded-full shadow-[0_4px_0_#b7004f] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#b7004f] transition-all"
+            data-path="descargables" href="#">Descargar Gratis 🎁</a>
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+              class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+        </div>
       </div>
-  <nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-full" data-path="inicio" href="#">Inicio</a><a class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="nuestros-libros" href="#">Nuestros Libros</a><a class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="sobre-brisa" href="#">Sobre Brisa</a><a class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="beneficios" href="#">Beneficios</a><a class="font-label-lg text-label-lg px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="descargables" href="#">Descargables</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-primary-container text-on-primary-container px-space-lg py-space-xs rounded-full shadow-[0_4px_0_#b7004f] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#b7004f] transition-all" data-path="descargables" href="#">Descargar Gratis 🎁</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-24 bg-background"><div class="flex flex-col w-full overflow-hidden">
-<!-- Top Sparkle / Clouds Wave Atmosphere Layer -->
-<div class="relative w-full overflow-hidden bg-gradient-to-b from-secondary-fixed/40 via-surface-container-low to-background pb-space-2xl">
-<!-- Ambient whimsical floating bubbles & stars -->
-<div class="pointer-events-none absolute -top-12 -left-12 w-64 h-64 rounded-full bg-secondary-container/20 blur-3xl"></div>
-<div class="pointer-events-none absolute top-40 right-10 w-80 h-80 rounded-full bg-primary-fixed/40 blur-3xl"></div>
-<div class="pointer-events-none absolute top-96 left-1/3 w-72 h-72 rounded-full bg-tertiary-fixed/50 blur-3xl"></div>
-<!-- 1. HERO SECTION -->
-<section class="relative max-w-container-max mx-auto px-gutter-desktop pt-space-xl pb-space-2xl">
-<!-- Mascot sticker pill overline -->
-<div class="flex items-center gap-space-xs mb-space-md">
-<span class="inline-flex items-center gap-space-2xs bg-surface-container-lowest px-space-md py-space-2xs rounded-full shadow-sm text-primary font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px] text-tertiary-container animate-pulse">wb_sunny</span>
-          ¡Aprender jugando cada día!
-        </span>
-<span class="inline-flex items-center gap-space-2xs bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
-          ✨ Colección Infantil 3 a 6 años
-        </span>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-<!-- Hero Text & CTA Column -->
-<div class="lg:col-span-6 flex flex-col items-start gap-space-md z-10">
-<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
-            ¡Aprender <br/>
-<span class="text-primary inline-flex items-center gap-2">
-              nunca fue
-              <svg class="w-8 h-8 text-tertiary-fixed-dim inline animate-spin" fill="currentColor" style="animation-duration: 12s;" viewbox="0 0 24 24">
-<path d="M12 2l2.4 6.9h7.3l-5.9 4.3 2.3 7-6.1-4.4-6.1 4.4 2.3-7-5.9-4.3h7.3z"></path>
-</svg>
-</span>
-<br/>
-<span class="text-secondary underline decoration-tertiary-fixed decoration-wavy decoration-4">tan divertido!</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-            Acompaña a <strong class="text-on-surface font-semibold">Brisa y su hermanito Álex</strong> en emocionantes aventuras llenas de letras, números, colores y juegos diseñados con ternura para despertar la curiosidad natural de los más pequeños.
-          </p>
-<!-- Interactive Action Buttons -->
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
-<a class="inline-flex items-center justify-center gap-space-xs font-headline-sm text-headline-sm bg-primary text-on-primary px-space-xl py-space-sm rounded-full shadow-[0_6px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_2px_0_#90003c] transition-all" href="#catalogo-libros">
-<span class="material-symbols-outlined text-[24px]">menu_book</span>
-              Descubre el Libro nº 1
-            </a>
-<a class="inline-flex items-center justify-center gap-space-xs font-headline-sm text-headline-sm bg-surface-container-lowest text-secondary px-space-lg py-space-sm rounded-full shadow-[0_6px_0_#d5e3fc] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_2px_0_#d5e3fc] transition-all" href="#descarga-gratis">
-<span class="material-symbols-outlined text-[24px] text-tertiary-container">draw</span>
-              Descarga láminas gratis 🎨
-            </a>
-</div>
-<!-- Trust Badges Bar -->
-<div class="pt-space-md flex flex-wrap gap-space-xs items-center">
-<div class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
-<span class="material-symbols-outlined text-tertiary-container text-[18px]">star</span>
-<span class="font-label-md text-label-md text-on-surface">+5.000 familias felices</span>
-</div>
-<div class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
-<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
-<span class="font-label-md text-label-md text-on-surface">100% pedagógico</span>
-</div>
-<div class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">child_care</span>
-<span class="font-label-md text-label-md text-on-surface">Edad: 3 a 6 años</span>
-</div>
-</div>
-</div>
-<!-- Hero Graphic Mascot Showcase with Cloud Cutout Frame -->
-<div class="lg:col-span-6 relative flex justify-center items-center">
-<div class="relative w-full max-w-lg aspect-[16/10] sm:aspect-[16/11]">
-<!-- Decorative bouncy cloud background bubble behind mascot -->
-<div class="absolute -inset-4 bg-gradient-to-tr from-secondary-fixed via-surface-container-lowest to-tertiary-fixed rounded-[3.5rem] rotate-2 shadow-[0_20px_40px_rgba(0,101,145,0.12)]"></div>
-<!-- Cloud frame container for Brisa greeting illustration -->
-<div class="relative w-full h-full rounded-[3rem] overflow-hidden bg-surface-container-lowest p-2 shadow-xl">
-<img alt="Brisa saludando alegremente en el jardín con coletas y lazos de topos rosas" class="w-full h-full object-cover rounded-[2.5rem] hover:scale-105 transition-transform duration-500 ease-out" src="/src/imagen1BrisaWeb.png"/>
-</div>
-<!-- Floating sticker badge top-right -->
-<div class="absolute -top-4 -right-4 bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-full shadow-[0_4px_12px_rgba(130,81,0,0.2)] flex items-center gap-space-2xs rotate-6 hover:rotate-0 transition-transform">
-<span class="text-xl">👋</span>
-<span class="font-label-lg text-label-lg font-bold">¡Hola, amiguitos!</span>
-</div>
-<!-- Floating sticker badge bottom-left -->
-<div class="absolute -bottom-5 -left-4 bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_8px_20px_rgba(183,0,79,0.14)] flex items-center gap-space-xs -rotate-3 hover:rotate-0 transition-transform">
-<span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[18px]">favorite</span>
-</span>
-<div>
-<p class="font-label-sm text-label-sm text-on-surface-variant leading-none">Creado con cariño</p>
-<p class="font-headline-sm text-headline-sm text-primary leading-tight">Primeros Pasos</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-<!-- 2. SECTION: SOBRE BRISA Y SU MUNDO (Warm Storytelling) -->
-<section class="w-full bg-surface-container-low py-space-3xl relative">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
-<span class="px-space-md py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">celebration</span>
-          Conoce a la protagonista
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">¡Hola, soy Brisa y este es mi mundo!</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
-          Brisa es una niña de 5 años curiosa, alegre y llena de energía. Con sus coletas rubias y sus inconfundibles lazos rosas de topos, le encanta explorar la naturaleza, pintar animales fantásticos y descifrar las letras mágicas junto a su hermanito Álex y sus inseparables amigos: Pío el pajarito azul y Sol radiante.
-        </p>
-</div>
-<!-- 3 Fun Fact Sticker Cards Bento Style -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-<!-- Card 1 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
-<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-fixed/30 group-hover:scale-126 transition-transform"></div>
-<div>
-<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-inner">
-<span class="material-symbols-outlined text-[30px]">palette</span>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Pasatiempo favorito</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">Pintar letras gigantes</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
-              Con ceras de todos los colores del arcoíris sobre cartulinas extendidas en el suelo del salón.
-            </p>
-</div>
-<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-primary font-label-md text-label-md">
-<span>🎨 ¡Más de 10 colores usados hoy!</span>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
-<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-fixed/40 group-hover:scale-125 transition-transform"></div>
-<div>
-<div class="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md shadow-inner">
-<span class="material-symbols-outlined text-[30px]">park</span>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Lugar favorito</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">El jardín de los tulipanes</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
-              Donde Álex corre tras las mariposas y el columpio amarillo les hace sentir que tocan las nubes.
-            </p>
-</div>
-<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
-<span>🌳 Risas al aire libre garantizadas</span>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
-<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-fixed/40 group-hover:scale-125 transition-transform"></div>
-<div>
-<div class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-inner">
-<span class="material-symbols-outlined text-[30px]">auto_awesome</span>
-</div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold">Mayor superpoder</span>
-<h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">Alegría transformadora</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
-              ¡Hacer que cada día ordinario se convierta en una fiesta inolvidable de aprendizaje y ternura!
-            </p>
-</div>
-<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
-<span>💖 Cero frustración, 100% amor</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 3. SECTION: NUESTROS LIBROS Y CUADERNOS DE ACTIVIDADES -->
-<section class="w-full bg-background py-space-3xl" id="catalogo-libros">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
-<div>
-<span class="px-space-md py-space-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">menu_book</span>
-            Catálogo Editorial Infantil
-          </span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Libros diseñados con amor para manos pequeñas</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-space-2xs">
-            Páginas gruesas, trazos claros y desafíos visuales que potencian la motricidad fina y la autoconfianza.
-          </p>
-</div>
-<div class="flex items-center gap-space-xs">
-<span class="font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-full text-on-surface">
-            📚 4 títulos disponibles
-          </span>
-</div>
-</div>
-<!-- Grid of Books -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
-<!-- BOOK CARD 1: Star featured with real cover https://lh3.googleusercontent.com/aida-public/AB6AXuDJubjavZBVsivLAvDGsKLNFVTxF_dkgeL9OdbRCkFfva3Q2oU9MnRDbxtjEWh6and3Zz9ZkMy7rq3XJZ1Sjzskpxww6aygj5D3cjdrPY_qEKx6_KL_klH5ic6iEt6GpLoo8JlZq9Tm8K7jVkEHiwt_AqgROmjQwAcxIWzR0DnOIaLZd7Zw2UHYcKjr5I0SLXXeelFT2Lly8xx0uX2oeoma8pqUxpb2q65Anoa94CpzjIBcNltnJPOr -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_30px_rgba(183,0,79,0.12)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
-<!-- Ribbon Tag -->
-<div class="absolute -top-3 left-6 z-20 bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-space-2xs rounded-full shadow-[0_3px_0_#90003c]">
-            ⭐ ¡Superventas!
-          </div>
-<div class="pt-space-xs">
-<!-- Cover Mockup Frame with angle tilt -->
-<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-low shadow-md mb-space-md group-hover:rotate-1 transition-transform">
-<img alt="Portada oficial del libro nº1 Los días de Brisa - La letra A" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJubjavZBVsivLAvDGsKLNFVTxF_dkgeL9OdbRCkFfva3Q2oU9MnRDbxtjEWh6and3Zz9ZkMy7rq3XJZ1Sjzskpxww6aygj5D3cjdrPY_qEKx6_KL_klH5ic6iEt6GpLoo8JlZq9Tm8K7jVkEHiwt_AqgROmjQwAcxIWzR0DnOIaLZd7Zw2UHYcKjr5I0SLXXeelFT2Lly8xx0uX2oeoma8pqUxpb2q65Anoa94CpzjIBcNltnJPOr"/>
-<span class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
-                Tomo 01
-              </span>
-</div>
-<!-- Chips -->
-<div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
-<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad: 3-5 años</span>
-<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Vocales &amp; Trazo</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº1: La letra A</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
-              Trazo guiado, asociación fonética, laberintos del avioncito y pegatinas para dominar la primera vocal con una sonrisa.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs">
-<div class="flex items-baseline justify-between mb-space-xs">
-<span class="font-headline-sm text-headline-sm text-primary font-bold">12,95 €</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Tapa blanda + Pegatinas</span>
-</div>
-<button class="w-full py-space-xs px-space-md bg-primary-container text-on-primary-container rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#90003c] flex items-center justify-center gap-space-2xs transition-all">
-<span class="material-symbols-outlined text-[20px]">visibility</span>
-              Ver más detalles
-            </button>
-</div>
-</div>
-<!-- BOOK CARD 2: Números Saltarines -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
-<div class="pt-space-xs">
-<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-secondary-fixed/30 flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:-rotate-1 transition-transform">
-<div class="w-20 h-20 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-display-hero text-display-hero shadow-lg mb-space-xs">
-                123
-              </div>
-<p class="font-headline-sm text-headline-sm text-on-secondary-container">Números Saltarines</p>
-<span class="font-body-sm text-body-sm text-secondary font-semibold">¡Contando zanahorias! 🥕</span>
-<span class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
-                Tomo 02
-              </span>
-</div>
-<div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
-<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad: 3-6 años</span>
-<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Conteo 1 al 10</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº2: Números Saltarines</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
-              Descubre los números del 1 al 10 con simpáticos conejos, secuencias de puntos para unir y retos de conteo visual.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs">
-<div class="flex items-baseline justify-between mb-space-xs">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">12,95 €</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">48 págs a color</span>
-</div>
-<button class="w-full py-space-xs px-space-md bg-secondary text-on-secondary rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] flex items-center justify-center gap-space-2xs transition-all">
-<span class="material-symbols-outlined text-[20px]">search</span>
-              Ver más
-            </button>
-</div>
-</div>
-<!-- BOOK CARD 3: El Jardín de los Colores -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
-<div class="pt-space-xs">
-<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-tertiary-fixed/40 flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:rotate-1 transition-transform">
-<div class="w-20 h-20 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-lg mb-space-xs">
-<span class="material-symbols-outlined text-[40px]">brush</span>
-</div>
-<p class="font-headline-sm text-headline-sm text-tertiary">Jardín de los Colores</p>
-<span class="font-body-sm text-body-sm text-tertiary font-semibold">¡Mezclas mágicas! 🌈</span>
-<span class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-tertiary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
-                Tomo 03
-              </span>
-</div>
-<div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad: 2-5 años</span>
-<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Arte &amp; Texturas</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº3: El Jardín de Colores</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
-              Colorear guiado, reconocimiento cromático y divertidos ejercicios para aprender qué pasa al mezclar rojo y azul.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs">
-<div class="flex items-baseline justify-between mb-space-xs">
-<span class="font-headline-sm text-headline-sm text-tertiary font-bold">11,95 €</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Papel alto gramaje</span>
-</div>
-<button class="w-full py-space-xs px-space-md bg-tertiary-container text-on-tertiary-container rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#653e00] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#653e00] flex items-center justify-center gap-space-2xs transition-all">
-<span class="material-symbols-outlined text-[20px]">search</span>
-              Ver más
-            </button>
-</div>
-</div>
-<!-- BOOK CARD 4: Pack Especial Imprimible PDF -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
-<div class="absolute -top-3 right-6 z-20 bg-secondary text-on-secondary font-label-sm text-label-sm px-space-md py-space-2xs rounded-full shadow-[0_3px_0_#004c6e]">
-            📥 Descarga Inmediata
-          </div>
-<div class="pt-space-xs">
-<div class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:-rotate-1 transition-transform">
-<div class="w-20 h-20 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shadow-lg mb-space-xs">
-<span class="material-symbols-outlined text-[40px]">download_done</span>
-</div>
-<p class="font-headline-sm text-headline-sm text-on-surface">Pack Vacaciones</p>
-<span class="font-body-sm text-body-sm text-primary font-semibold">+60 Fichas Imprimibles</span>
-<span class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
-                PDF Digital
-              </span>
-</div>
-<div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
-<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Todas las edades</span>
-<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">PDF Imprimible</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Gran Cuaderno de Vacaciones</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
-              Descarga directa en PDF listo para imprimir tantas veces como quieras en casa. Ideal para viajes o fines de semana.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs">
-<div class="flex items-baseline justify-between mb-space-xs">
-<span class="font-headline-sm text-headline-sm text-primary font-bold">8,50 €</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Acceso de por vida</span>
-</div>
-<button class="w-full py-space-xs px-space-md bg-secondary text-on-secondary rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] flex items-center justify-center gap-space-2xs transition-all">
-<span class="material-symbols-outlined text-[20px]">file_download</span>
-              Obtener PDF
-            </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 4. SECTION: BENEFICIOS PEDAGÓGICOS -->
-<section class="w-full bg-surface-container-low py-space-3xl relative">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="text-center max-w-2xl mx-auto mb-space-2xl">
-<span class="px-space-md py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">school</span>
-          Enfoque Consciente y Respetuoso
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">¿Por qué las familias eligen Los días de Brisa?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-2xs">
-          Pensado por especialistas para estimular habilidades cognitivas y motoras sin generar sobreestímulo ni pantallas.
-        </p>
-</div>
-<!-- Bento 4 Cards Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
-<!-- Benefit 1 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
-<div>
-<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-sm">
-<span class="material-symbols-outlined text-[32px]">palette</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Creatividad e imaginación</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Espacio generoso para inventar historias, colorear libremente y dar rienda suelta al pensamiento lateral infantil.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-primary font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
-            Sin dibujos rígidos
-          </div>
-</div>
-<!-- Benefit 2 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
-<div>
-<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md shadow-sm">
-<span class="material-symbols-outlined text-[32px]">psychology</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Educación divertida</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Secuencias lógicas, motricidad fina, laberintos y grafomotricidad adaptadas al ritmo preschool de cada peque.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
-            Curva suave de dificultad
-          </div>
-</div>
-<!-- Benefit 3 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
-<div>
-<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-sm">
-<span class="material-symbols-outlined text-[32px]">sentiment_very_satisfied</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Aprende jugando natural</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Cero pantallas, cero frustración. Pedagogía positiva basada en la satisfacción de terminar cada hoja con éxito.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
-            Desconexión digital feliz
-          </div>
-</div>
-<!-- Benefit 4 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
-<div>
-<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-md shadow-sm">
-<span class="material-symbols-outlined text-[32px]">diversity_3</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Tiempo en familia</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Momentos únicos de complicidad entre madres, padres e hijos leyendo y resolviendo retos codo con codo.
-            </p>
-</div>
-<div class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-primary font-label-md text-label-md">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
-            Recuerdos imborrables
-          </div>
-</div>
-</div>
-</div>
-</section>
-<!-- 5. SECTION: TESTIMONIOS REALES -->
-<section class="w-full bg-background py-space-3xl">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="text-center max-w-2xl mx-auto mb-space-2xl">
-<span class="px-space-md py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
-<span class="material-symbols-outlined text-[16px]">reviews</span>
-          Opiniones de Familias Reales
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Testimonios de familias que ya disfrutan de Brisa</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-2xs">
-          Descubre cómo ha transformado las tardes de juego y aprendizaje en miles de hogares.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-<!-- Testimonial 1 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface italic">
-              «A mi hija Sofía (4 años) no le gustaba coger el lápiz ni sentarse a dibujar, pero con Brisa pide hacer las fichas todos los días antes de merendar. ¡Una maravilla!»
-            </p>
-</div>
-<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
-<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-headline-sm text-headline-sm">
-              L
-            </div>
-<div>
-<p class="font-headline-sm text-headline-sm text-on-surface">Lucía M.</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Mamá de dos (Madrid)</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface italic">
-              «El material imprimible tiene una calidad maravillosa. Es bonito, limpio y muy entretenido. Los peques conectan al instante con los personajes. ¡Deseando que salga el libro de la B!»
-            </p>
-</div>
-<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-headline-sm text-headline-sm">
-              C
-            </div>
-<div>
-<p class="font-headline-sm text-headline-sm text-on-surface">Carlos G.</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Maestro de infantil y papá</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-1 text-tertiary-container mb-space-md">
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-<span class="material-symbols-outlined text-[22px]">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface italic">
-              «Las ilustraciones transmiten una dulzura increíble. Álex y Brisa ya son como dos amigos más en nuestra casa. Mis mellizos no paran de imitar el avioncito de la A.»
-            </p>
-</div>
-<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
-<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center font-headline-sm text-headline-sm">
-              E
-            </div>
-<div>
-<p class="font-headline-sm text-headline-sm text-on-surface">Elena P.</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Mamá de mellizos (Valencia)</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 6. SECTION: CIERRE / LEAD MAGNET -->
-<section class="w-full py-space-3xl relative overflow-hidden bg-gradient-to-r from-secondary-fixed via-surface-container-lowest to-primary-fixed" id="descarga-gratis">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="bg-surface-container-lowest/90 backdrop-blur-md rounded-[3rem] p-space-xl md:p-space-3xl shadow-[0_20px_50px_rgba(0,101,145,0.14)] relative">
-<!-- Floating decorative sticker icons -->
-<span class="absolute top-6 right-8 text-3xl hidden md:inline animate-bounce">🖍️</span>
-<span class="absolute bottom-6 left-8 text-3xl hidden md:inline animate-pulse">🎁</span>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-<div class="lg:col-span-7 flex flex-col gap-space-sm">
-<span class="inline-flex items-center gap-space-2xs bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-space-md py-space-2xs rounded-full w-max">
-<span class="material-symbols-outlined text-[18px]">card_giftcard</span>
-              ¡Regalo de Bienvenida Exclusivo!
+    </div>
+  </header>
+  <main class="w-full pt-24 bg-background">
+    <div class="flex flex-col w-full overflow-hidden">
+      <!-- Top Sparkle / Clouds Wave Atmosphere Layer -->
+      <div
+        class="relative w-full overflow-hidden bg-gradient-to-b from-secondary-fixed/40 via-surface-container-low to-background pb-space-2xl">
+        <!-- Ambient whimsical floating bubbles & stars -->
+        <div
+          class="pointer-events-none absolute -top-12 -left-12 w-64 h-64 rounded-full bg-secondary-container/20 blur-3xl">
+        </div>
+        <div class="pointer-events-none absolute top-40 right-10 w-80 h-80 rounded-full bg-primary-fixed/40 blur-3xl">
+        </div>
+        <div class="pointer-events-none absolute top-96 left-1/3 w-72 h-72 rounded-full bg-tertiary-fixed/50 blur-3xl">
+        </div>
+        <!-- 1. HERO SECTION -->
+        <section class="relative max-w-container-max mx-auto px-gutter-desktop pt-space-xl pb-space-2xl">
+          <!-- Mascot sticker pill overline -->
+          <div class="flex items-center gap-space-xs mb-space-md">
+            <span
+              class="inline-flex items-center gap-space-2xs bg-surface-container-lowest px-space-md py-space-2xs rounded-full shadow-sm text-primary font-label-md text-label-md">
+              <span class="material-symbols-outlined text-[18px] text-tertiary-container animate-pulse">wb_sunny</span>
+              ¡Aprender jugando cada día!
             </span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">¿Quieres probar antes? Descarga el minikit gratis</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-              Recibe al instante en tu correo un PDF con 5 láminas exclusivas para colorear, el laberinto del caracol y una guía de juego pedagógico para padres.
-            </p>
-<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px] text-secondary">check</span> Descarga en 1 clic</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px] text-secondary">check</span> Sin publicidad</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px] text-secondary">check</span> Listo para imprimir</span>
-</div>
-</div>
-<div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-[2rem] shadow-inner">
-<form class="flex flex-col gap-space-sm" id="leadForm" onsubmit="event.preventDefault(); document.getElementById('successNotice').classList.remove('hidden'); this.reset();">
-<div>
-<label class="block font-label-md text-label-md text-on-surface mb-1" for="parentName">Nombre de mamá o papá</label>
-<input class="w-full px-space-md py-space-sm rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-md focus:outline-none focus:border-secondary transition-all" id="parentName" placeholder="Ej. Laura" required="" type="text"/>
-</div>
-<div>
-<label class="block font-label-md text-label-md text-on-surface mb-1" for="parentEmail">Correo electrónico</label>
-<input class="w-full px-space-md py-space-sm rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-md focus:outline-none focus:border-secondary transition-all" id="parentEmail" placeholder="tuemail@ejemplo.com" required="" type="email"/>
-</div>
-<button class="w-full mt-space-xs py-space-sm px-space-lg rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_5px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#90003c] flex items-center justify-center gap-space-2xs transition-all" type="submit">
-<span>¡Quiero mi kit imprimible gratis!</span>
-<span>🎁</span>
-</button>
-</form>
-<div class="hidden mt-space-md p-space-md bg-secondary-fixed text-on-secondary-fixed rounded-xl text-center font-label-md text-label-md animate-fade-in" id="successNotice">
-              🎉 ¡Yuju! Tu enlace de descarga ya va volando a tu bandeja de entrada. ¡A pintar!
+            <span
+              class="inline-flex items-center gap-space-2xs bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
+              ✨ Colección Infantil 3 a 6 años
+            </span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <!-- Hero Text & CTA Column -->
+            <div class="lg:col-span-6 flex flex-col items-start gap-space-md z-10">
+              <h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
+                ¡Aprender <br />
+                <span class="text-primary inline-flex items-center gap-2">
+                  nunca fue
+                  <svg class="w-8 h-8 text-tertiary-fixed-dim inline animate-spin" fill="currentColor"
+                    style="animation-duration: 12s;" viewbox="0 0 24 24">
+                    <path d="M12 2l2.4 6.9h7.3l-5.9 4.3 2.3 7-6.1-4.4-6.1 4.4 2.3-7-5.9-4.3h7.3z"></path>
+                  </svg>
+                </span>
+                <br />
+                <span class="text-secondary underline decoration-tertiary-fixed decoration-wavy decoration-4">tan
+                  divertido!</span>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                Acompaña a <strong class="text-on-surface font-semibold">Brisa y su hermanito Álex</strong> en
+                emocionantes aventuras llenas de letras, números, colores y juegos diseñados con ternura para despertar
+                la curiosidad natural de los más pequeños.
+              </p>
+              <!-- Interactive Action Buttons -->
+              <div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+                <a class="inline-flex items-center justify-center gap-space-xs font-headline-sm text-headline-sm bg-primary text-on-primary px-space-xl py-space-sm rounded-full shadow-[0_6px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_2px_0_#90003c] transition-all"
+                  href="#catalogo-libros">
+                  <span class="material-symbols-outlined text-[24px]">menu_book</span>
+                  Descubre el Libro nº 1
+                </a>
+                <a class="inline-flex items-center justify-center gap-space-xs font-headline-sm text-headline-sm bg-surface-container-lowest text-secondary px-space-lg py-space-sm rounded-full shadow-[0_6px_0_#d5e3fc] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_2px_0_#d5e3fc] transition-all"
+                  href="#descarga-gratis">
+                  <span class="material-symbols-outlined text-[24px] text-tertiary-container">draw</span>
+                  Descarga láminas gratis 🎨
+                </a>
+              </div>
+              <!-- Trust Badges Bar -->
+              <div class="pt-space-md flex flex-wrap gap-space-xs items-center">
+                <div
+                  class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
+                  <span class="material-symbols-outlined text-tertiary-container text-[18px]">star</span>
+                  <span class="font-label-md text-label-md text-on-surface">+5.000 familias felices</span>
+                </div>
+                <div
+                  class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
+                  <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                  <span class="font-label-md text-label-md text-on-surface">100% pedagógico</span>
+                </div>
+                <div
+                  class="flex items-center gap-space-2xs bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-2xs rounded-full shadow-sm">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">child_care</span>
+                  <span class="font-label-md text-label-md text-on-surface">Edad: 3 a 6 años</span>
+                </div>
+              </div>
             </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div></main><footer class="w-full bg-gradient-to-b from-surface-container-lowest via-surface-container-low to-surface-container pt-space-3xl pb-space-2xl"><div class="max-w-container-max mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="Logo Los días de Brisa" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU98NdEeZKBUTBReHra97JMnluxTkU1VmvKnMFHND4Vi8qm0Ar_7YuCCRNzE5YqcjVNnypSWsYoEFSty4-HCwUAj4jbDiZAscYaiofk0RufyLdVMnXZZ8tv61wy0BOnRg-lcfUA5zbm_66vt7LbtHpgYa_DfjY0MWFGnnYB7deZbUx28iaX8TZSPBbj8dg6UsjXLlDEE8IwkVKfRXcO50YrbkOpleBWQaq0LyL28OrS38g97_LZAxf"/><span class="font-headline-sm text-headline-sm text-primary">Los días de Brisa</span></div><p class="font-body-md text-body-md text-on-surface-variant">Jugar, aprender y crecer, ¡cada día es una aventura llena de color y ternura para los más pequeños!</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-[20px]">palette</span></a><a class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span></a><a class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-tertiary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined text-[20px]">family_restroom</span></a></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Enlaces Rápidos</h4><ul class="space-y-space-xs font-body-md text-body-md"><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="inicio" href="#">Inicio</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="nuestros-libros" href="#">Colección de Libros</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="sobre-brisa" href="#">Quién es Brisa</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="beneficios" href="#">Beneficios Pedagógicos</a></li><li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="descargables" href="#">Láminas Gratuitas</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Club Familiar</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Recibe cada mes actividades interactivas, recortables y novedades exclusivas para tus peques.</p><form class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-xs rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:border-secondary transition-all" placeholder="Correo de mamá o papá" type="email"/><button class="w-full py-space-xs px-space-md rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] transition-all" type="button">¡Unirme a la diversión!</button></form></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Garantía y Confianza</h4><div class="bg-surface-container-lowest p-space-md rounded-lg shadow-[0_4px_16px_rgba(0,101,145,0.06)] space-y-space-xs"><p class="font-label-md text-label-md text-secondary flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[20px]">verified</span>Contenido 100% Seguro</p><p class="font-body-sm text-body-sm text-on-surface-variant">Material avalado por educadores infantiles y diseñado con amor para primeros lectores.</p></div></div></div><div class="pt-space-lg border-t border-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 2024 Los días de Brisa. Todos los derechos reservados. Creado con ternura.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface" href="#">Aviso Legal</a><a class="text-on-surface-variant hover:text-on-surface" href="#">Privacidad</a><a class="text-on-surface-variant hover:text-on-surface" href="#">Contacto</a></div></div></div></footer></body></html>
+            <!-- Hero Graphic Mascot Showcase with Cloud Cutout Frame -->
+            <div class="lg:col-span-6 relative flex justify-center items-center">
+              <div class="relative w-full max-w-lg aspect-[16/10] sm:aspect-[16/11]">
+                <!-- Decorative bouncy cloud background bubble behind mascot -->
+                <div
+                  class="absolute -inset-4 bg-gradient-to-tr from-secondary-fixed via-surface-container-lowest to-tertiary-fixed rounded-[3.5rem] rotate-2 shadow-[0_20px_40px_rgba(0,101,145,0.12)]">
+                </div>
+                <!-- Cloud frame container for Brisa greeting illustration -->
+                <div
+                  class="relative w-full h-full rounded-[3rem] overflow-hidden bg-surface-container-lowest p-2 shadow-xl">
+                  <img alt="Brisa saludando alegremente en el jardín con coletas y lazos de topos rosas"
+                    class="w-full h-full object-cover rounded-[2.5rem] hover:scale-105 transition-transform duration-500 ease-out"
+                    src="/src/imagen1BrisaWeb.png" />
+                </div>
+                <!-- Floating sticker badge top-right -->
+                <div
+                  class="absolute -top-4 -right-4 bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-full shadow-[0_4px_12px_rgba(130,81,0,0.2)] flex items-center gap-space-2xs rotate-6 hover:rotate-0 transition-transform">
+                  <span class="text-xl">👋</span>
+                  <span class="font-label-lg text-label-lg font-bold">¡Hola, amiguitos!</span>
+                </div>
+                <!-- Floating sticker badge bottom-left -->
+                <div
+                  class="absolute -bottom-5 -left-4 bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_8px_20px_rgba(183,0,79,0.14)] flex items-center gap-space-xs -rotate-3 hover:rotate-0 transition-transform">
+                  <span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[18px]">favorite</span>
+                  </span>
+                  <div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant leading-none">Creado con cariño</p>
+                    <p class="font-headline-sm text-headline-sm text-primary leading-tight">Primeros Pasos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 2. SECTION: SOBRE BRISA Y SU MUNDO (Warm Storytelling) -->
+      <section class="w-full bg-surface-container-low py-space-3xl relative">
+        <div class="max-w-container-max mx-auto px-gutter-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="px-space-md py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
+              <span class="material-symbols-outlined text-[16px]">celebration</span>
+              Conoce a la protagonista
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">¡Hola, soy Brisa y este es mi mundo!</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+              Brisa es una niña de 5 años curiosa, alegre y llena de energía. Con sus coletas rubias y sus
+              inconfundibles lazos rosas de topos, le encanta explorar la naturaleza, pintar animales fantásticos y
+              descifrar las letras mágicas junto a su hermanito Álex y sus inseparables amigos: Pío el pajarito azul y
+              Sol radiante.
+            </p>
+          </div>
+          <!-- 3 Fun Fact Sticker Cards Bento Style -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Card 1 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
+              <div
+                class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-fixed/30 group-hover:scale-126 transition-transform">
+              </div>
+              <div>
+                <div
+                  class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-inner">
+                  <span class="material-symbols-outlined text-[30px]">palette</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Pasatiempo
+                  favorito</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">Pintar letras gigantes</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Con ceras de todos los colores del arcoíris sobre cartulinas extendidas en el suelo del salón.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-primary font-label-md text-label-md">
+                <span>🎨 ¡Más de 10 colores usados hoy!</span>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
+              <div
+                class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-fixed/40 group-hover:scale-125 transition-transform">
+              </div>
+              <div>
+                <div
+                  class="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md shadow-inner">
+                  <span class="material-symbols-outlined text-[30px]">park</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Lugar
+                  favorito</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">El jardín de los tulipanes
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Donde Álex corre tras las mariposas y el columpio amarillo les hace sentir que tocan las nubes.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+                <span>🌳 Risas al aire libre garantizadas</span>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_12px_28px_rgba(0,101,145,0.06)] hover:translate-y-[-4px] transition-transform flex flex-col justify-between relative overflow-hidden group">
+              <div
+                class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-fixed/40 group-hover:scale-125 transition-transform">
+              </div>
+              <div>
+                <div
+                  class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-inner">
+                  <span class="material-symbols-outlined text-[30px]">auto_awesome</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold">Mayor
+                  superpoder</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">Alegría transformadora</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  ¡Hacer que cada día ordinario se convierta en una fiesta inolvidable de aprendizaje y ternura!
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+                <span>💖 Cero frustración, 100% amor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3. SECTION: NUESTROS LIBROS Y CUADERNOS DE ACTIVIDADES -->
+      <section class="w-full bg-background py-space-3xl" id="catalogo-libros">
+        <div class="max-w-container-max mx-auto px-gutter-desktop">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+            <div>
+              <span
+                class="px-space-md py-space-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
+                <span class="material-symbols-outlined text-[16px]">menu_book</span>
+                Catálogo Editorial Infantil
+              </span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">Libros diseñados con amor para manos
+                pequeñas</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-space-2xs">
+                Páginas gruesas, trazos claros y desafíos visuales que potencian la motricidad fina y la autoconfianza.
+              </p>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span
+                class="font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-full text-on-surface">
+                📚 4 títulos disponibles
+              </span>
+            </div>
+          </div>
+          <!-- Grid of Books -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- BOOK CARD 1: Star featured with real cover https://lh3.googleusercontent.com/aida-public/AB6AXuDJubjavZBVsivLAvDGsKLNFVTxF_dkgeL9OdbRCkFfva3Q2oU9MnRDbxtjEWh6and3Zz9ZkMy7rq3XJZ1Sjzskpxww6aygj5D3cjdrPY_qEKx6_KL_klH5ic6iEt6GpLoo8JlZq9Tm8K7jVkEHiwt_AqgROmjQwAcxIWzR0DnOIaLZd7Zw2UHYcKjr5I0SLXXeelFT2Lly8xx0uX2oeoma8pqUxpb2q65Anoa94CpzjIBcNltnJPOr -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_30px_rgba(183,0,79,0.12)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
+              <!-- Ribbon Tag -->
+              <div
+                class="absolute -top-3 left-6 z-20 bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-space-2xs rounded-full shadow-[0_3px_0_#90003c]">
+                ⭐ ¡Superventas!
+              </div>
+              <div class="pt-space-xs">
+                <!-- Cover Mockup Frame with angle tilt -->
+                <div
+                  class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-low shadow-md mb-space-md group-hover:rotate-1 transition-transform">
+                  <img alt="Portada oficial del libro nº1 Los días de Brisa - La letra A"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJubjavZBVsivLAvDGsKLNFVTxF_dkgeL9OdbRCkFfva3Q2oU9MnRDbxtjEWh6and3Zz9ZkMy7rq3XJZ1Sjzskpxww6aygj5D3cjdrPY_qEKx6_KL_klH5ic6iEt6GpLoo8JlZq9Tm8K7jVkEHiwt_AqgROmjQwAcxIWzR0DnOIaLZd7Zw2UHYcKjr5I0SLXXeelFT2Lly8xx0uX2oeoma8pqUxpb2q65Anoa94CpzjIBcNltnJPOr" />
+                  <span
+                    class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
+                    Tomo 01
+                  </span>
+                </div>
+                <!-- Chips -->
+                <div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
+                  <span
+                    class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad:
+                    3-5 años</span>
+                  <span
+                    class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Vocales
+                    &amp; Trazo</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº1: La letra A</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
+                  Trazo guiado, asociación fonética, laberintos del avioncito y pegatinas para dominar la primera vocal
+                  con una sonrisa.
+                </p>
+              </div>
+              <div class="mt-space-md pt-space-xs">
+                <div class="flex items-baseline justify-between mb-space-xs">
+                  <span class="font-headline-sm text-headline-sm text-primary font-bold">12,95 €</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Tapa blanda + Pegatinas</span>
+                </div>
+                <button
+                  class="w-full py-space-xs px-space-md bg-primary-container text-on-primary-container rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#90003c] flex items-center justify-center gap-space-2xs transition-all">
+                  <span class="material-symbols-outlined text-[20px]">visibility</span>
+                  Ver más detalles
+                </button>
+              </div>
+            </div>
+            <!-- BOOK CARD 2: Números Saltarines -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
+              <div class="pt-space-xs">
+                <div
+                  class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-secondary-fixed/30 flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:-rotate-1 transition-transform">
+                  <div
+                    class="w-20 h-20 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-display-hero text-display-hero shadow-lg mb-space-xs">
+                    123
+                  </div>
+                  <p class="font-headline-sm text-headline-sm text-on-secondary-container">Números Saltarines</p>
+                  <span class="font-body-sm text-body-sm text-secondary font-semibold">¡Contando zanahorias! 🥕</span>
+                  <span
+                    class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
+                    Tomo 02
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
+                  <span
+                    class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad:
+                    3-6 años</span>
+                  <span
+                    class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Conteo
+                    1 al 10</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº2: Números Saltarines
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
+                  Descubre los números del 1 al 10 con simpáticos conejos, secuencias de puntos para unir y retos de
+                  conteo visual.
+                </p>
+              </div>
+              <div class="mt-space-md pt-space-xs">
+                <div class="flex items-baseline justify-between mb-space-xs">
+                  <span class="font-headline-sm text-headline-sm text-secondary font-bold">12,95 €</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">48 págs a color</span>
+                </div>
+                <button
+                  class="w-full py-space-xs px-space-md bg-secondary text-on-secondary rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] flex items-center justify-center gap-space-2xs transition-all">
+                  <span class="material-symbols-outlined text-[20px]">search</span>
+                  Ver más
+                </button>
+              </div>
+            </div>
+            <!-- BOOK CARD 3: El Jardín de los Colores -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
+              <div class="pt-space-xs">
+                <div
+                  class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-tertiary-fixed/40 flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:rotate-1 transition-transform">
+                  <div
+                    class="w-20 h-20 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-lg mb-space-xs">
+                    <span class="material-symbols-outlined text-[40px]">brush</span>
+                  </div>
+                  <p class="font-headline-sm text-headline-sm text-tertiary">Jardín de los Colores</p>
+                  <span class="font-body-sm text-body-sm text-tertiary font-semibold">¡Mezclas mágicas! 🌈</span>
+                  <span
+                    class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-tertiary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
+                    Tomo 03
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
+                  <span
+                    class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Edad:
+                    2-5 años</span>
+                  <span
+                    class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Arte
+                    &amp; Texturas</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Libro nº3: El Jardín de
+                  Colores</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
+                  Colorear guiado, reconocimiento cromático y divertidos ejercicios para aprender qué pasa al mezclar
+                  rojo y azul.
+                </p>
+              </div>
+              <div class="mt-space-md pt-space-xs">
+                <div class="flex items-baseline justify-between mb-space-xs">
+                  <span class="font-headline-sm text-headline-sm text-tertiary font-bold">11,95 €</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Papel alto gramaje</span>
+                </div>
+                <button
+                  class="w-full py-space-xs px-space-md bg-tertiary-container text-on-tertiary-container rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#653e00] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#653e00] flex items-center justify-center gap-space-2xs transition-all">
+                  <span class="material-symbols-outlined text-[20px]">search</span>
+                  Ver más
+                </button>
+              </div>
+            </div>
+            <!-- BOOK CARD 4: Pack Especial Imprimible PDF -->
+            <div
+              class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between relative group hover:translate-y-[-6px] transition-all">
+              <div
+                class="absolute -top-3 right-6 z-20 bg-secondary text-on-secondary font-label-sm text-label-sm px-space-md py-space-2xs rounded-full shadow-[0_3px_0_#004c6e]">
+                📥 Descarga Inmediata
+              </div>
+              <div class="pt-space-xs">
+                <div
+                  class="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-surface-container flex flex-col items-center justify-center p-space-md text-center shadow-md mb-space-md group-hover:-rotate-1 transition-transform">
+                  <div
+                    class="w-20 h-20 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shadow-lg mb-space-xs">
+                    <span class="material-symbols-outlined text-[40px]">download_done</span>
+                  </div>
+                  <p class="font-headline-sm text-headline-sm text-on-surface">Pack Vacaciones</p>
+                  <span class="font-body-sm text-body-sm text-primary font-semibold">+60 Fichas Imprimibles</span>
+                  <span
+                    class="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">
+                    PDF Digital
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-2xs mb-space-2xs flex-wrap">
+                  <span
+                    class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">Todas
+                    las edades</span>
+                  <span
+                    class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full">PDF
+                    Imprimible</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface line-clamp-2">Gran Cuaderno de Vacaciones
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs line-clamp-3">
+                  Descarga directa en PDF listo para imprimir tantas veces como quieras en casa. Ideal para viajes o
+                  fines de semana.
+                </p>
+              </div>
+              <div class="mt-space-md pt-space-xs">
+                <div class="flex items-baseline justify-between mb-space-xs">
+                  <span class="font-headline-sm text-headline-sm text-primary font-bold">8,50 €</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Acceso de por vida</span>
+                </div>
+                <button
+                  class="w-full py-space-xs px-space-md bg-secondary text-on-secondary rounded-full font-label-lg text-label-lg shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] flex items-center justify-center gap-space-2xs transition-all">
+                  <span class="material-symbols-outlined text-[20px]">file_download</span>
+                  Obtener PDF
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. SECTION: BENEFICIOS PEDAGÓGICOS -->
+      <section class="w-full bg-surface-container-low py-space-3xl relative">
+        <div class="max-w-container-max mx-auto px-gutter-desktop">
+          <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="px-space-md py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
+              <span class="material-symbols-outlined text-[16px]">school</span>
+              Enfoque Consciente y Respetuoso
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">¿Por qué las familias eligen Los días de
+              Brisa?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-2xs">
+              Pensado por especialistas para estimular habilidades cognitivas y motoras sin generar sobreestímulo ni
+              pantallas.
+            </p>
+          </div>
+          <!-- Bento 4 Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Benefit 1 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
+              <div>
+                <div
+                  class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-sm">
+                  <span class="material-symbols-outlined text-[32px]">palette</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Creatividad e imaginación</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Espacio generoso para inventar historias, colorear libremente y dar rienda suelta al pensamiento
+                  lateral infantil.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-primary font-label-md text-label-md">
+                <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Sin dibujos rígidos
+              </div>
+            </div>
+            <!-- Benefit 2 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
+              <div>
+                <div
+                  class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md shadow-sm">
+                  <span class="material-symbols-outlined text-[32px]">psychology</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Educación divertida</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Secuencias lógicas, motricidad fina, laberintos y grafomotricidad adaptadas al ritmo preschool de cada
+                  peque.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+                <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Curva suave de dificultad
+              </div>
+            </div>
+            <!-- Benefit 3 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
+              <div>
+                <div
+                  class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-sm">
+                  <span class="material-symbols-outlined text-[32px]">sentiment_very_satisfied</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Aprende jugando natural</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Cero pantallas, cero frustración. Pedagogía positiva basada en la satisfacción de terminar cada hoja
+                  con éxito.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+                <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Desconexión digital feliz
+              </div>
+            </div>
+            <!-- Benefit 4 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
+              <div>
+                <div
+                  class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-md shadow-sm">
+                  <span class="material-symbols-outlined text-[32px]">diversity_3</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Tiempo en familia</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Momentos únicos de complicidad entre madres, padres e hijos leyendo y resolviendo retos codo con codo.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-space-2xs text-primary font-label-md text-label-md">
+                <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Recuerdos imborrables
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. SECTION: TESTIMONIOS REALES -->
+      <section class="w-full bg-background py-space-3xl">
+        <div class="max-w-container-max mx-auto px-gutter-desktop">
+          <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="px-space-md py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md inline-flex items-center gap-space-2xs mb-space-xs">
+              <span class="material-symbols-outlined text-[16px]">reviews</span>
+              Opiniones de Familias Reales
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Testimonios de familias que ya disfrutan de
+              Brisa</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-2xs">
+              Descubre cómo ha transformado las tardes de juego y aprendizaje en miles de hogares.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Testimonial 1 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  «A mi hija Sofía (4 años) no le gustaba coger el lápiz ni sentarse a dibujar, pero con Brisa pide
+                  hacer las fichas todos los días antes de merendar. ¡Una maravilla!»
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-headline-sm text-headline-sm">
+                  L
+                </div>
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-on-surface">Lucía M.</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Mamá de dos (Madrid)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  «El material imprimible tiene una calidad maravillosa. Es bonito, limpio y muy entretenido. Los peques
+                  conectan al instante con los personajes. ¡Deseando que salga el libro de la B!»
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-headline-sm text-headline-sm">
+                  C
+                </div>
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-on-surface">Carlos G.</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Maestro de infantil y papá</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div
+              class="bg-surface-container-lowest p-space-xl rounded-xl shadow-[0_8px_24px_rgba(0,101,145,0.06)] flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-1 text-tertiary-container mb-space-md">
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                  <span class="material-symbols-outlined text-[22px]">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  «Las ilustraciones transmiten una dulzura increíble. Álex y Brisa ya son como dos amigos más en
+                  nuestra casa. Mis mellizos no paran de imitar el avioncito de la A.»
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-sm pt-space-md border-t border-surface-container-high mt-space-md">
+                <div
+                  class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center font-headline-sm text-headline-sm">
+                  E
+                </div>
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-on-surface">Elena P.</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Mamá de mellizos (Valencia)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 6. SECTION: CIERRE / LEAD MAGNET -->
+      <section
+        class="w-full py-space-3xl relative overflow-hidden bg-gradient-to-r from-secondary-fixed via-surface-container-lowest to-primary-fixed"
+        id="descarga-gratis">
+        <div class="max-w-container-max mx-auto px-gutter-desktop">
+          <div
+            class="bg-surface-container-lowest/90 backdrop-blur-md rounded-[3rem] p-space-xl md:p-space-3xl shadow-[0_20px_50px_rgba(0,101,145,0.14)] relative">
+            <!-- Floating decorative sticker icons -->
+            <span class="absolute top-6 right-8 text-3xl hidden md:inline animate-bounce">🖍️</span>
+            <span class="absolute bottom-6 left-8 text-3xl hidden md:inline animate-pulse">🎁</span>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+              <div class="lg:col-span-7 flex flex-col gap-space-sm">
+                <span
+                  class="inline-flex items-center gap-space-2xs bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-space-md py-space-2xs rounded-full w-max">
+                  <span class="material-symbols-outlined text-[18px]">card_giftcard</span>
+                  ¡Regalo de Bienvenida Exclusivo!
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">¿Quieres probar antes? Descarga el minikit
+                  gratis</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                  Recibe al instante en tu correo un PDF con 5 láminas exclusivas para colorear, el laberinto del
+                  caracol y una guía de juego pedagógico para padres.
+                </p>
+                <div
+                  class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+                  <span class="flex items-center gap-1"><span
+                      class="material-symbols-outlined text-[18px] text-secondary">check</span> Descarga en 1
+                    clic</span>
+                  <span class="flex items-center gap-1"><span
+                      class="material-symbols-outlined text-[18px] text-secondary">check</span> Sin publicidad</span>
+                  <span class="flex items-center gap-1"><span
+                      class="material-symbols-outlined text-[18px] text-secondary">check</span> Listo para
+                    imprimir</span>
+                </div>
+              </div>
+              <div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-[2rem] shadow-inner">
+                <form class="flex flex-col gap-space-sm" id="leadForm"
+                  onsubmit="event.preventDefault(); document.getElementById('successNotice').classList.remove('hidden'); this.reset();">
+                  <div>
+                    <label class="block font-label-md text-label-md text-on-surface mb-1" for="parentName">Nombre de
+                      mamá o papá</label>
+                    <input
+                      class="w-full px-space-md py-space-sm rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-md focus:outline-none focus:border-secondary transition-all"
+                      id="parentName" placeholder="Ej. Laura" required="" type="text" />
+                  </div>
+                  <div>
+                    <label class="block font-label-md text-label-md text-on-surface mb-1" for="parentEmail">Correo
+                      electrónico</label>
+                    <input
+                      class="w-full px-space-md py-space-sm rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-md focus:outline-none focus:border-secondary transition-all"
+                      id="parentEmail" placeholder="tuemail@ejemplo.com" required="" type="email" />
+                  </div>
+                  <button
+                    class="w-full mt-space-xs py-space-sm px-space-lg rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_5px_0_#90003c] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#90003c] flex items-center justify-center gap-space-2xs transition-all"
+                    type="submit">
+                    <span>¡Quiero mi kit imprimible gratis!</span>
+                    <span>🎁</span>
+                  </button>
+                </form>
+                <div
+                  class="hidden mt-space-md p-space-md bg-secondary-fixed text-on-secondary-fixed rounded-xl text-center font-label-md text-label-md animate-fade-in"
+                  id="successNotice">
+                  🎉 ¡Yuju! Tu enlace de descarga ya va volando a tu bandeja de entrada. ¡A pintar!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer
+    class="w-full bg-gradient-to-b from-surface-container-lowest via-surface-container-low to-surface-container pt-space-3xl pb-space-2xl">
+    <div class="max-w-container-max mx-auto px-gutter-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-xs"><img alt="Logo Los días de Brisa"
+              class="h-8 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU98NdEeZKBUTBReHra97JMnluxTkU1VmvKnMFHND4Vi8qm0Ar_7YuCCRNzE5YqcjVNnypSWsYoEFSty4-HCwUAj4jbDiZAscYaiofk0RufyLdVMnXZZ8tv61wy0BOnRg-lcfUA5zbm_66vt7LbtHpgYa_DfjY0MWFGnnYB7deZbUx28iaX8TZSPBbj8dg6UsjXLlDEE8IwkVKfRXcO50YrbkOpleBWQaq0LyL28OrS38g97_LZAxf" /><span
+              class="font-headline-sm text-headline-sm text-primary">Los días de Brisa</span></div>
+          <p class="font-body-md text-body-md text-on-surface-variant">Jugar, aprender y crecer, ¡cada día es una
+            aventura llena de color y ternura para los más pequeños!</p>
+          <div class="flex items-center gap-space-sm pt-space-xs"><a
+              class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-primary hover:scale-110 transition-transform"
+              href="#"><span class="material-symbols-outlined text-[20px]">palette</span></a><a
+              class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-secondary hover:scale-110 transition-transform"
+              href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span></a><a
+              class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,101,145,0.08)] flex items-center justify-center text-tertiary hover:scale-110 transition-transform"
+              href="#"><span class="material-symbols-outlined text-[20px]">family_restroom</span></a></div>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Enlaces Rápidos</h4>
+          <ul class="space-y-space-xs font-body-md text-body-md">
+            <li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="inicio"
+                href="#">Inicio</a></li>
+            <li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors"
+                data-path="nuestros-libros" href="#">Colección de Libros</a></li>
+            <li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors"
+                data-path="sobre-brisa" href="#">Quién es Brisa</a></li>
+            <li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors"
+                data-path="beneficios" href="#">Beneficios Pedagógicos</a></li>
+            <li role="none"><a class="text-on-surface-variant hover:text-primary transition-colors"
+                data-path="descargables" href="#">Láminas Gratuitas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Club Familiar</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Recibe cada mes actividades
+            interactivas, recortables y novedades exclusivas para tus peques.</p>
+          <form class="flex flex-col gap-space-xs"><input
+              class="w-full px-space-md py-space-xs rounded-full bg-surface-container-lowest border-2 border-surface-container-highest text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:border-secondary transition-all"
+              placeholder="Correo de mamá o papá" type="email" /><button
+              class="w-full py-space-xs px-space-md rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-[0_4px_0_#004c6e] hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-[0_1px_0_#004c6e] transition-all"
+              type="button">¡Unirme a la diversión!</button></form>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Garantía y Confianza</h4>
+          <div
+            class="bg-surface-container-lowest p-space-md rounded-lg shadow-[0_4px_16px_rgba(0,101,145,0.06)] space-y-space-xs">
+            <p class="font-label-md text-label-md text-secondary flex items-center gap-space-2xs"><span
+                class="material-symbols-outlined text-[20px]">verified</span>Contenido 100% Seguro</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Material avalado por educadores infantiles y
+              diseñado con amor para primeros lectores.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-space-lg border-t border-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-md">
+        <p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 
+          <span id="spanAnioActual"></span> Los días de Brisa.
+          Todos los derechos reservados.</p>
+        <div class="flex items-center gap-space-md font-body-sm text-body-sm"><a
+            class="text-on-surface-variant hover:text-on-surface" href="#">Aviso Legal</a><a
+            class="text-on-surface-variant hover:text-on-surface" href="#">Privacidad</a><a
+            class="text-on-surface-variant hover:text-on-surface" href="#">Contacto</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
